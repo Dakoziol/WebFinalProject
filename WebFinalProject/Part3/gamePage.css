@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+#gallery{
+	float: left;
+	width: 60%;
+}
+#gallery h3{
+	margin-top: 30px;
+}
+#gallery img{
+	margin: 0px;
+}
+#about{
+	margin:0px;
+	float:right;
+	width:40%;
+	height: auto;
+}
+#contact{
+	margin-top:0px;
+}
+article{
+	max-width: 100%;
+	margin:0px;
+	background-image:url(images/darkTile.svg);
+	background-size: 10px;
+}
+article:after{
+	clear: both;
+}
+
+
+/* small phone */
+@media screen and (max-width: 600px) {
+	#gallery, #about{
+		width:100%;
+		float:none;
+	}
+	nav{
+		background-color: black;
+	}
+}
+@media screen and (min-width: 601px) {
+	#gallery .column:hover{
+		filter:grayscale(50%);
+		transition: all ease 0.2s;
+	}
+	#gallery .column:active{
+		filter:none;
+		width:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		transition: all ease 0.2s;
+	}
+}

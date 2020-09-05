@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+#bannerLogo,article{
+	max-width: 60%;
+}
+#bannerLogo{
+	display: block;
+}
+#bottomText{
+	text-align: center;
+	clear: both;
+}
+#contact{
+	width:800px;
+	margin:20px auto;
+	overflow: auto;
+}
+#version{
+	margin:20px;
+	font-style: italic;
+	font-weight: bolder;
+	color: #FFFF97;
+}
+
+.footnote{
+	font-size: 0.6em;
+}
+
+.logoWide{
+	background-color: #333333;
+	overflow:auto;
+	margin: 20px;
+	border-radius: 10px;
+}
+.logoWide img{
+	margin:0px;
+}
+.logoWide:active{
+	filter: brightness(150%);
+	transition: all ease 0.1s;
+}
+
+.column{
+	width:50%;
+	float: left;
+}
+
+/*BUTTONS*/
+.button{
+	box-sizing: border-box;
+	line-height: 60px;
+	text-align: center;
+	
+	font-size: 2rem;
+	font-family: 'Staatliches', cursive;
+	font-weight: normal;
+	
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow:inset 0px 0px 0px 4px white;
+}
+
+.button:hover{
+	box-shadow: none;
+	font-weight: bolder;
+	background-color: white;
+	color:black;
+	transition: all ease 0.2s;
+}
+.button:active{
+	box-shadow: none;
+	font-weight: bold;
+	background-color: #FFFF97;
+	color:#333333;
+	transition: all ease 0.1s;
+}
+/**/
+
+blockquote{
+	font-size: 2em;
+	font-style: italic;
+}
+img{
+	margin: 20px;
+	display: block;
+	max-width: 100%;
+}
+header img{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+/*nav*/
+nav img{
+	height: 50px;
+	padding: 5px;
+	margin:0px;
+	margin-right:25px;
+	display: block;
+	float: left;
+}
+nav img:hover{
+	background-color: #5F5F5FBB;
+	transition: all ease 0.2s;
+}
+nav img:active{
+	filter: invert(1);
+	-webkit-filter: invert(1);
+	background-color: #000068;/*inverted yellow*/
+	transition: all ease 0.1s;
+}
+nav img#currentPage{
+	filter: invert(1);
+	-webkit-filter: invert(1);
+	background-color: black;/*inverted white*/
+}
+nav a{
+	overflow:visible;
+}
+nav{
+	z-index: 50;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0px;
+	background-color: #000000cc;
+	position: -webkit- sticky;
+	position: sticky;
+	top: 0px;
+}
+/**/
+html{
+	
+}
+body {
+	background-color: white;
+	font-size: 16px;
+	color: white;
+	line-height: 1.8em;
+	font-style: normal;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	margin: 20px;
+	font-size: 2rem;
+	font-family: 'Staatliches', cursive;
+	font-weight: normal;
+}
+h3{
+	margin:20px;
+}
+p{
+	margin: 20px;
+}
+header{
+	background-color: black;
+	margin:0 auto;
+}
+header img{
+	
+}
+
+article {
+	margin: 20px auto;
+	background-color: #333333;
+	overflow: auto;
+}
+footer{
+	background-color: black;
+	margin:0 auto;
+}
+footer ul{
+	list-style-type: none;
+	margin:20px;
+	padding:0px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:visited {
+	color: #FFFF;
+}
+a:hover {
+	color: #FFFF97;
+}
+
+a .logoWide {
+	color: white;
+}
+
+
+/* small phone */
+@media screen and (max-width: 600px) {
+	
+	#contact{
+		width:100%;
+		margin:0px auto;
+	}
+	article {
+		max-width: 100%;
+		margin: 0;
+	}
+	.column{
+		width:100%;
+	}
+	.logoWide{
+		margin:0px;
+		border-radius: 0px;
+	}
+	.logoWide h3{
+		margin-bottom:30px;
+	}
+	nav{
+		position: inherit;
+	}
+	nav img{
+		width:100%;
+	}
+	nav img#currentPage{
+		position: sticky;
+		top:0px;
+	}
+}
+/* medium device */
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+	article {
+		max-width: 80%;
+	}
+	#contact{
+		width:80%;
+		
+	}
+	.logoWide{
+		max-width: 80%;
+		margin:20px auto;
+	}
+	.logoWide:hover{
+		max-width:90%;
+		transition: all ease 0.2s;
+	}
+}
+/* normal device */
+@media screen and (min-width: 1001px) {
+	article {
+		max-width: 800px;
+	}
+	#contact{
+		width:800px;
+	}
+	.logoWide{
+		width:800px;
+		margin:20px auto;
+	}
+	.logoWide:hover{
+		width:880px;
+		transition: all ease 0.2s;
+	}
+}

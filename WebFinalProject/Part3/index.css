@@ -1,0 +1,14 @@
+body{
+	background-image:url(images/lightTile.svg);
+	background-size: 10px;
+}
+article {
+	border-radius: 10px;
+	
+}
+/* small phone */
+@media screen and (max-width: 600px) {
+	article {
+		border-radius: 0px;
+	}
+}
